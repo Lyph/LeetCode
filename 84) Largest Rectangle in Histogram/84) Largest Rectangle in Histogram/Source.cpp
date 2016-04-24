@@ -11,50 +11,59 @@
 
 using namespace std; 
 
+
+
 int RectangleArea(vector<int>& heights) {
 
-	if (heights.size() == 1) { return heights[0]; } //you have to recheck for this again
+	if (heights.size() == 1) { return heights[0]; } //set of 1
 
-	static int max = 0;
-	int checker;
-	for (int i = 0; i<heights.size()-1; i++) {
-		int counter = 1;
-		int min = heights[i];
-		if (max < heights[i]) { max = heights[i]; } //this is for the first value, think [9,1]
+	int counterTemp = 0; 
+	int counter = 0;
+	int tempMaxArea = 0; 
+	int maxArea = 0;
 
-		for (int j = i + 1;j<heights.size();j++) {
-			counter++;
+	heights.push_back(0);
+	int i = heights[0];
+	int k = 0;
 
-			if (min > heights[j]) { min = heights[j]; }
-			checker = min *counter;
-			if (checker > max) {
-				max = checker;
+	while(i != 0) {
+		for (int j = 0; j < heights.size(); j++) {
+			if (i <= heights[j]) {
+				counterTemp++;
+			}
+			else {
+				if (counterTemp > counter) {
+					counter = counterTemp;
+				}
+				counterTemp = 0;
 			}
 		}
+		tempMaxArea = i * counter;
+		if (tempMaxArea > maxArea) { maxArea = tempMaxArea; }
+		counter = 0;
+		k++;
+		while (i == heights[k]) { k++; }
+		i = heights[k];
+		
 	}
-	return max;
+	return maxArea;
 }
 
 int largestRectangleArea(vector<int>& whole) {
 	vector<vector<int>> A;
 	int start = 0;
 	int end = 0;
-	
 
 	if (whole.size() == 0) { return 0; } //empty set
 	if (whole.size() == 1) { return whole[0]; } //set of 1
-	if (whole.size() == 2 && whole[0] == 0 && whole[1] == 0) { return 0; } //[0,0]
-	if (whole.size() == 20000) { return 100000000; }
-	if (whole.size() == 30000) { return 30000; }
+	if (*max_element(whole.begin(), whole.end()) == 0) { return 0; }//multiple zeros
+	//if (whole.size() == 20000) { return 100000000; }
 
-	whole.push_back(0);//we add a zero just incase the final value won't be recorded ex [0,0,2,2,3,2,1,2] -> [0,0,2,2,3,2,1,2,0]
-
+	whole.push_back(0);
 	for (int i = 0; i < whole.size();i++)
 	{
-		if (whole[i] != 0)
-		{
-			end++;
-		}
+		if (whole[i] != 0){end++;}
+
 		else {
 			vector<int> temp(whole.begin() + start, whole.begin() + end);
 			if (temp.size() != 0) {
@@ -73,9 +82,10 @@ int largestRectangleArea(vector<int>& whole) {
 	return max2;
 }
 
+
 int main()
 {
-	vector<int> a{ 2,1,2 };
+	vector<int> a{5,5,1,7,1,1,5,2,7,6};
 	
 	int max = largestRectangleArea(a);
 	cout << max;
