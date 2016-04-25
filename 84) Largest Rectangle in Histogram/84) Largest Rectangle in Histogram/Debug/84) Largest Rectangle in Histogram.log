@@ -1,7 +1,7 @@
 ﻿  Source.cpp
-c:\users\lyphc\desktop\leet\84) largest rectangle in histogram\84) largest rectangle in histogram\source.cpp(20): warning C4018: '<': signed/unsigned mismatch
-c:\users\lyphc\desktop\leet\84) largest rectangle in histogram\84) largest rectangle in histogram\source.cpp(25): warning C4018: '<': signed/unsigned mismatch
-c:\users\lyphc\desktop\leet\84) largest rectangle in histogram\84) largest rectangle in histogram\source.cpp(51): warning C4018: '<': signed/unsigned mismatch
-c:\users\lyphc\desktop\leet\84) largest rectangle in histogram\84) largest rectangle in histogram\source.cpp(68): warning C4018: '<': signed/unsigned mismatch
-  84) Largest Rectangle in Histogram.vcxproj -> C:\Users\lyphc\Desktop\Leet\84) Largest Rectangle in Histogram\Debug\84) Largest Rectangle in Histogram.exe
-  84) Largest Rectangle in Histogram.vcxproj -> C:\Users\lyphc\Desktop\Leet\84) Largest Rectangle in Histogram\Debug\84) Largest Rectangle in Histogram.pdb (Partial PDB)
+c:\users\lyphc\documents\github\leetcode\84) largest rectangle in histogram\84) largest rectangle in histogram\source.cpp(31): warning C4018: '<': signed/unsigned mismatch
+c:\users\lyphc\documents\github\leetcode\84) largest rectangle in histogram\84) largest rectangle in histogram\source.cpp(32): warning C4018: '<': signed/unsigned mismatch
+c:\users\lyphc\documents\github\leetcode\84) largest rectangle in histogram\84) largest rectangle in histogram\source.cpp(48): warning C4018: '<': signed/unsigned mismatch
+c:\users\lyphc\documents\github\leetcode\84) largest rectangle in histogram\84) largest rectangle in histogram\source.cpp(49): warning C4018: '<': signed/unsigned mismatch
+  84) Largest Rectangle in Histogram.vcxproj -> C:\Users\lyphc\Documents\GitHub\LeetCode\84) Largest Rectangle in Histogram\Debug\84) Largest Rectangle in Histogram.exe
+  84) Largest Rectangle in Histogram.vcxproj -> C:\Users\lyphc\Documents\GitHub\LeetCode\84) Largest Rectangle in Histogram\Debug\84) Largest Rectangle in Histogram.pdb (Partial PDB)

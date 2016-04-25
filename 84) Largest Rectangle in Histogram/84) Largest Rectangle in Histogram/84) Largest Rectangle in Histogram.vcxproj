@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{C576E54D-9592-4DEC-9970-37D59E4018B7}</ProjectGuid>
+    <ProjectGuid>{E5F7A47D-A4EE-4591-9667-76A5070E5757}</ProjectGuid>
     <RootNamespace>My84LargestRectangleinHistogram</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
